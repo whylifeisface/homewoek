@@ -10,6 +10,8 @@
     <Button
         android:layout_gravity="center"
         android:id="@+id/zhenli"
+        android:onClick="myclick"
+
         android:layout_width="wrap_content"
         android:singleLine="true"
         android:layout_height="wrap_content"
@@ -18,6 +20,7 @@
     <Button
         android:layout_gravity="center"
         android:id="@+id/dida"
+        android:onClick="myclick"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="抵达目的地" />
@@ -25,18 +28,24 @@
     <Button
         android:layout_gravity="center"
         android:id="@+id/ruxiao"
+        android:onClick="myclick"
+
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="入校第一站" />
     <Button
         android:layout_gravity="center"
         android:id="@+id/woshi"
+        android:onClick="myclick"
+
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="我是一个兵" />
     <Button
         android:layout_gravity="center"
         android:id="@+id/shenghuo"
+        android:onClick="myclick"
+
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="生活万花筒" />
@@ -44,6 +53,8 @@
     <Button
         android:layout_gravity="center"
         android:id="@+id/jiejiao"
+        android:onClick="myclick"
+
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="结交新朋友" />
@@ -52,6 +63,8 @@
     <Button
         android:layout_gravity="center"
         android:id="@+id/qinlian"
+        android:onClick="myclick"
+
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="勤练有补助" />
@@ -59,8 +72,14 @@
     <Button
         android:layout_gravity="center"
         android:id="@+id/xuezhang"
+        android:onClick="myclick"
+
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="学长学姐寄语" />
-
+    <ImageView
+        android:id="@+id/frest_assist_iv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
 </LinearLayout>

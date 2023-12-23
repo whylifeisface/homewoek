@@ -4,9 +4,12 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
+import com.bumptech.glide.Glide;
 import com.example.home.R;
 
 public class FreshAssistActivity extends AppCompatActivity {
@@ -24,73 +27,38 @@ public class FreshAssistActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_frest_assist);
-
-        int[] btnIds = {
-                R.id.zhenli,
-                R.id.dida,
-                R.id.ruxiao,
-                R.id.woshi,
-                R.id.shenghuo,
-                R.id.jiejiao,
-                R.id.qinlian,
-                R.id.xuezhang
-        };
-
-        Button[] btns = new Button[btnIds.length];
-
-        myOnclickListener myOnclickListener = new myOnclickListener();
-
-        for (int i = 0; i < btnIds.length; i++) {
-            btns[i] = findViewById(btnIds[i]);
-        }
+        ImageView iv = (ImageView) findViewById(R.id.frest_assist_iv);
+        Glide.with(this)
+                .load("https://exp-picture.cdn.bcebos.com/9b2098254193cee81ed36aad5a0ff2260c9aa86d.jpg?x-bce-process=image/resize,m_lfit,w_500,limit_1")
+                .into(iv);
     }
 
-    class myOnclickListener implements Button.OnClickListener {
+    public void myclick(View v) {
+        Intent intent = new Intent(FreshAssistActivity.this, DetailInfoActivity.class);
+        if (v.getId() == R.id.zhenli) {
+            intent.putExtra("info", info[0]);
+        } else if (v.getId() == R.id.dida) {
+            intent.putExtra("info", info[1]);
 
-        @Override
-        public void onClick(View v) {
+        } else if (v.getId() == R.id.ruxiao) {
+            intent.putExtra("info", info[2]);
 
-            Intent intent = new Intent(FreshAssistActivity.this, DetailInfoActivity.class);
-//            switch (v.getId()) {
-//                case R.id.zhenli: {
-//                    intent.putExtra("info", info[0]);
-//                    break;
-//                }
-//                case R.id.dida: {
-//                    intent.putExtra("info", info[1]);
-//                    break;
-//                }
-//                case R.id.ruxiao: {
-//                    intent.putExtra("info", info[2]);
-//                    break;
-//                }
-//                case R.id.woshi: {
-//                    intent.putExtra("info", info[3]);
-//                    break;
-//                }
-//                case R.id.shenghuo: {
-//                    intent.putExtra("info", info[4]);
-//                    break;
-//                }
-//                case R.id.jiejiao: {
-//                    intent.putExtra("info", info[5]);
-//                    break;
-//                }
-//                case R.id.qinlian: {
-//                    intent.putExtra("info", info[6]);
-//                    break;
-//                }
-//                case R.id.xuezhang: {
-//                    intent.putExtra("info", info[7]);
-//                    break;
-//                }
-//                default:
-//                    break;
-//
-//            }
-            startActivity(intent);
+        } else if (v.getId() == R.id.woshi) {
+            intent.putExtra("info", info[3]);
+        } else if (v.getId() == R.id.shenghuo) {
+            intent.putExtra("info", info[4]);
 
+        } else if (v.getId() == R.id.jiejiao) {
+            intent.putExtra("info", info[5]);
+
+        } else if (v.getId() == R.id.qinlian) {
+            intent.putExtra("info", info[6]);
+        } else if (v.getId() == R.id.xuezhang) {
+            intent.putExtra("info", info[7]);
+        } else {
+            Log.d("TAG", "onClick: ");
         }
+        startActivity(intent);
     }
 
 

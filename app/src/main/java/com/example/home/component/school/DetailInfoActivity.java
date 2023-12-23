@@ -17,9 +17,7 @@ public class DetailInfoActivity extends AppCompatActivity {
         setContentView(R.layout.activity_detail_info);
         Intent intent = getIntent();
         String info = intent.getStringExtra("info");
-
         TextView tv = (TextView) findViewById(R.id.detail_info_tv);
-
         tv.setText(info);
 
 

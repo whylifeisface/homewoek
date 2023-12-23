@@ -32,17 +32,12 @@
         <activity
             android:name=".component.school.DetailInfoActivity"
             android:exported="false" />
-        <activity
-            android:name=".component.school.FrestAssistActivity"
-            android:exported="false" />
+
         <activity
             android:name=".component.school.CampusSceneryActivity"
             android:exported="false" />
         <activity
-            android:name=".FreshAssistActivity"
-            android:exported="false" />
-        <activity
-            android:name=".CampusSceneryActivity"
+            android:name=".component.school.FreshAssistActivity"
             android:exported="false" />
         <activity
             android:name=".CampusLifeActivity"

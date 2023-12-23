@@ -28,7 +28,7 @@ public class CampusLifeActivity extends AppCompatActivity {
         startActivity(new Intent(this, CampusSceneryActivity.class));
     }
 
-    public void new_of_school(View view) {
+    public void new_of(View view) {
         //TODO
         startActivity(new Intent(this, FreshAssistActivity.class));
 

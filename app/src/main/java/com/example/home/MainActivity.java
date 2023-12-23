@@ -42,8 +42,8 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
     public void phoneKown(View view){
-//        Intent intent = new Intent(this, CampusLifeActivity.class);
-//        startActivity(intent);
+        Intent intent = new Intent(this, CampusLifeActivity.class);
+        startActivity(intent);
     }
     public void schoolLife(View view){
         Intent intent = new Intent(this, CampusLifeActivity.class);
