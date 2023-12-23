@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".component.school.FreshAssistActivity">
+
+    <Button
+        android:layout_gravity="center"
+        android:id="@+id/zhenli"
+        android:layout_width="wrap_content"
+        android:singleLine="true"
+        android:layout_height="wrap_content"
+        android:text="整理新装" />
+
+    <Button
+        android:layout_gravity="center"
+        android:id="@+id/dida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="抵达目的地" />
+
+    <Button
+        android:layout_gravity="center"
+        android:id="@+id/ruxiao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="入校第一站" />
+    <Button
+        android:layout_gravity="center"
+        android:id="@+id/woshi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我是一个兵" />
+    <Button
+        android:layout_gravity="center"
+        android:id="@+id/shenghuo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="生活万花筒" />
+
+    <Button
+        android:layout_gravity="center"
+        android:id="@+id/jiejiao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="结交新朋友" />
+
+
+    <Button
+        android:layout_gravity="center"
+        android:id="@+id/qinlian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="勤练有补助" />
+
+    <Button
+        android:layout_gravity="center"
+        android:id="@+id/xuezhang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="学长学姐寄语" />
+
+</LinearLayout>
